@@ -1,0 +1,44 @@
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+android_app {
+    name: "PandoraChecker",
+    
+    certificate: "platform",
+    privileged: true,
+    system_ext_specific: false,
+    platform_apis: true,
+    
+    srcs: ["src/**/*.java"],
+
+    manifest: "AndroidManifest.xml",
+    
+    static_libs: [
+        "androidx.core_core",
+        "com.google.android.material_material",
+    ],
+    
+    sdk_version: "system_current",
+    
+    enabled: true,
+    
+    required: [
+        "privapp-permissions-pandorachecker",
+        "me.dabao1955.pandorachecker.xml",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-pandorachecker",
+    sub_dir: "permissions",
+    src: "privapp-permissions-pandorachecker.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "me.dabao1955.pandorachecker.xml",
+    sub_dir: "sysconfig",
+    src: "me.dabao1955.pandorachecker.xml",
+    filename_from_src: true,
+}

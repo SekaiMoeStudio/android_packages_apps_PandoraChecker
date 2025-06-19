@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <system-user-whitelisted-app package="me.dabao1955.pandorachecker" />
+    <priv-app-whitelist package="me.dabao1955.pandorachecker" />
+</config>
