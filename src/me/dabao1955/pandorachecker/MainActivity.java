@@ -12,7 +12,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class MainActivity extends Activity {
-    private static final Set<String> TARGET_STRINGS = Set.of("OngelPeats", "OanPora");
+    private static final Set<String> TARGET_STRINGS = Set.of("OngelPeats", "OanPora", "OuPi", "Pandora", "AngelBeats");
     private AlertDialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
